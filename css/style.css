@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Sofadi+One&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+    
+    cor01:#620093;
+    cor02:#420892;
+    cor03:#020961;
+    cor04:#010741;
+    cor05:#07031C;
+
+    fonte01:"Parisienne", cursive;
+    fonte02:"Parkinsans", sans-serif; 
+    fonte03:Arial, sans-serif;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #07031C; /* cor05 */
+}
+
+/* Header */
+header {
+    background-color: #620093; /* cor01 */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-family: var(fonte01);
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* Navegação */
+nav {
+    background-color: #420892; /* cor02 */
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    background-color:#c8caeb; /* cor03 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+section h1, section h2 {
+    color: #620093; /* cor01 */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+section img + img {
+    margin-left: 10px; /* Espaçamento entre imagens */
+}
+
+section p {
+    color: black;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+section .images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2d2f42; /* cor04 */
+    color: white;
+    padding: 1rem 0;
+}
+
+footer nav {
+    margin: 1rem 0;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    section .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.awards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.awards-table caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.awards-table th,
+.awards-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.awards-table thead {
+    background-color: #620093;
+    color: #fff;
+}
+
+.awards-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.awards-table .indicado {
+    background-color: #f4cccc;
+    color: #b30000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.awards-table .venceu {
+    background-color: #d9ead3;
+    color: #006600;
+    text-align: center;
+    font-weight: bold;
+}
+
+    
