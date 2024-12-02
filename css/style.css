@@ -4,115 +4,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Sofadi+One&family=Tangerine:wght@400;700&display=swap');
 
 :root{
-    
-    cor01:#620093;
-    cor02:#420892;
-    cor03:#020961;
-    cor04:#010741;
-    cor05:#07031C;
 
-    fonte01:"Parisienne", cursive;
-    fonte02:"Parkinsans", sans-serif; 
-    fonte03:Arial, sans-serif;
+    --cor01:#b265df1f;
+    --cor02:#793ecc;
+    --cor03:#101780;
+    --cor04:#010741;
+    --cor05:#07031C;
+
+    --fonte01:"Parisienne", cursive;
+    --fonte02:"Parkinsans", sans-serif; 
+    --fonte03:Arial, sans-serif;
 }
 
-
+*{
+    margin: 0px;
+    padding: 0px;  
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: #07031C; /* cor05 */
+    font-family: var(--fonte03);
+    background-color:var(--cor01);   
 }
 
-/* Header */
-header {
-    background-color: #620093; /* cor01 */
+header{
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor03));
+    padding: 30px;
+}
+
+header > h1{
     color: white;
+    font-family: var(--fonte02);
+    font-size: 2.5em;
     text-align: center;
-    padding: 1.5rem 0;
+    margin: 10px;
 }
 
-header h1 {
-    font-family: var(fonte01);
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
+header > p{
+    font-family: var(--fonte02);
     font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    margin-top: 8px;
 }
 
-/* Navegação */
-nav {
-    background-color: #420892; /* cor02 */
-    padding: 0.5rem 0;
+nav{
+    background-color: var(--cor03);
+    padding: 5px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0 1rem;
+nav ul li{
+    margin: 10px;
 }
 
 nav ul li a {
     color: white;
+    font-family: var(--fonte02);
+    font-size: 1em;
     text-decoration: none;
-    font-weight: bold;
+    text-align: center;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: white;
+    border-radius: 2px;
 }
 
-/* Main */
-main {
-    margin: 2rem auto;
+main{
+    margin: auto;
     max-width: 900px;
-    padding: 0 1rem;
-    background-color:#c8caeb; /* cor03 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 30px;
+    border-radius: 2px;
+    background-color:white;
 }
 
-/* Seções */
-section {
-    margin-bottom: 2rem;
-    padding: 1rem;
+section{
+    margin: 2px;
+    padding: 2px;
+
 }
 
-section h1, section h2 {
-    color: #620093; /* cor01 */
-    border-bottom: 2px solid #ddd;
+section h1, h2{
+    color: black;
+    font-family: var(--fonte02);
+    border-bottom: 2px solid var(--cor02);
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
 
 section img {
     max-width: 100px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-section img + img {
-    margin-left: 10px; /* Espaçamento entre imagens */
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.486);
 }
 
 section p {
     color: black;
-    text-align: center;
-    margin: 1rem 0;
+    text-align: justify;
+    margin: 10px;
 }
 
-section .images-container {
+section .img-livros {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -120,48 +119,74 @@ section .images-container {
     padding: 1rem 0;
 }
 
-/* Footer */
-footer {
+.principais-img{
+    position: relative; 
+    max-width: 300px;
+    width: 280px;
+    height: 290px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem; 
+    padding: 0px;
+    margin: auto; 
+}
+
+ .principais-img:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.514);
+    color: white;
+    border-radius: 2px;
+}
+
+#universo{
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;    
+    display: flex;       
+    margin: auto; 
+    box-shadow: 2px 3px solid rgba(0, 0, 0, 0.452);
+}
+#img-principal{
+    max-width: 400px;
+    border-radius: 4px;
+    display: flex;
+    width: 400px; 
+    height: 300px; 
+    margin: auto; 
+    
+}
+
+#img-sobre{
+    max-width: 300px;
+    border-radius: 6px;
+    display: flex;
+    width: 300px; 
+    height: 350px; 
+    margin: auto; 
+}
+
+section .p-img{
     text-align: center;
-    background-color: #2d2f42; /* cor04 */
-    color: white;
-    padding: 1rem 0;
 }
 
-footer nav {
-    margin: 1rem 0;
+section > div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-footer nav a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    section .images-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.video{
+    position: relative;
+    height:0px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 55%;  
 }
 
 .awards-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: left;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -181,7 +206,7 @@ footer nav a:hover {
 }
 
 .awards-table thead {
-    background-color: #620093;
+    background-color: var(--cor02);
     color: #fff;
 }
 
@@ -203,4 +228,112 @@ footer nav a:hover {
     font-weight: bold;
 }
 
+aside{
+    margin: 8px;
+    padding: 35px;
+    border-radius: 5px;
+    background-color:var(--cor02) ;
+}
+aside h2{
+    font-family: var(--fonte01);
+    font-size: 2em;
+    color: black;
     
+}
+aside p{
+    padding-bottom: 8px;
+    font-family: var(--fonte03);
+}
+
+form h2 {
+    text-align: center;
+    
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    width: auto;
+}
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+.form-group button {
+    width: 100%;
+    background: #53b857;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.form-group button:hover {
+    background: #45a049;
+}
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+#logo{  
+    border-radius: 6px;
+    display: flex;
+    width: 30px; 
+    height: 30px; 
+    margin: auto; 
+    padding-bottom: 0px;
+}
+
+#instagram{
+    color: var(--cor03);
+    display: flex;
+    justify-content: center;    
+    padding-top: 0px;
+    text-decoration: none;
+}
+
+#instagram:hover{
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;  
+    background-color: var(--cor03); 
+    color: white;
+    padding: 25px;   
+}
+
+footer nav  {
+       margin:8px;
+}
+
+footer nav p{
+    justify-content: center; 
+    padding: 3px;
+   
+}
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 2px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}

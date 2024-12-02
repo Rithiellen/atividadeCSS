@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1>Sarah J. Maas</h1>
+        <p>"Entre em mundos repletos de magia, romance e batalhas épicas criados por Sarah J. Maas."</p>
     </header>
     <nav>
         <ul>
@@ -20,29 +21,103 @@
             <li><a href="sobre.html">Sobre</a></li>
         </ul>
     </nav>
-
+    
     <main>
         <section>
-            <img src="imagens/sarahjmaas2.jpg" alt="">
+            <h1> Bem-vindo(a) aos Mundos de Sarah J. Maas</h1>
+            <p>
+                Esse é um espaço criado por fã e para fãs da autora que revolucionou o universo da fantasia moderna. Aqui, você encontrará tudo o que precisa para explorar os mundos mágicos e épicos criados por Sarah J. Maas.
+            </p>
+            <img src="imagens/sarahjmaas2.jpg" alt="autora" id="img-principal"> 
+            <p>
+                Se você ama personagens fortes, tramas emocionantes e mundos ricos em detalhes, está no lugar certo. Aqui, o foco é mergulhar nas histórias que nos fazem sonhar, refletir e ansiar pela próxima página.
+            </p>
+            <p>
+                Sarah J. Maas é a mente brilhante por trás de algumas das séries de fantasia mais vendidas do mundo. Desde seu primeiro sucesso, Trono de Vidro, até os universos de Corte de Espinhos e Rosas e Cidade da Lua Crescente, ela se destacou como uma contadora de histórias incomparável, criando mundos que continuam a inspirar leitores ao redor do mundo.
+            </p>
         </section>
 
         <section>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus iure repudiandae deleniti eaque similique cum enim praesentium atque ullam labore, assumenda at quo dolorum obcaecati tenetur sed, suscipit quas veniam!</p>
+            <h2>"Três mundos, infinitas aventuras."</h2>
+            <div id="principais">
+                <a href="acotar.html"><img src="imagens/feyre.jpg" alt="acotar" class="principais-img"></a>
+                <a href="tronodevidro.html"><img src="imagens/celaine.jpg" alt="trono de vidro" class="principais-img"></a>
+                <a href="cidadeluacrescente.html"><img src="imagens/city.jpg" alt="crescente city" class="principais-img"></a>
+            </div>
+            <p>"Entre em mundos onde a magia encontra o impossível e cada página conta uma nova aventura. Descubra as histórias épicas de Sarah J. Maas."</p>
+        </section>
+           
+        <section>
+            <h2>Lançamentos futuros</h2>
+            <ul>
+                <li>6° Livro de Corte de Espinhos e Rosas</li>
+                <br>
+                <li>4° Livro de Cidade da Lua Crescente</li>
+            </ul>
+            <p>
+            Depois de publicar o sexo livro de ACOTAR, Maas disse em entrevista que deu ao <a href="https://www.today.com/popculture/books/sarah-j-maas-crescent-city-4-next-books-rcna136033">Today</a> que planeja publicar um projeto secreto no qual já tem em mente há algum tempo. Sobre este projeto, Sarah J. Maas disse:
+            "Não vou dizer em que universo se passa. Não vou dizer nada. Mas é uma história que está fermentando na minha mente já faz bastante tempo… Acho que será um livro muito emocionante para mim escrever, levando em consideração o mundo que irei escrever e dos personagens que podem aparecer.”
+            </p>           
         </section>
 
+        <section>
+            <picture>
+                <source media="(min-width:800px )" srcset="imagens/universos.jpg" type="image/jpg">
+                <source media="(min-width: 300px)" srcset="imagens/universospequena.jpg">
+                <img src="imagens/universos.jpg" alt="universos" id="universo">
+            </picture>
+        </section>
        
-            <p><img src="imagens/imgprincipal.jpg" alt=""></p>
-     
+        <aside>
+            <h2>Entre em Contato com a Fanpage</h2>
+            <p>Tem alguma dúvida, sugestão ou mensagem especial? Preencha o formulário abaixo e entraremos em contato com você!</p>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="sugestao">Sugestão de Conteúdo</option>
+                        <option value="duvidas">Dúvidas sobre as Obras</option>
+                        <option value="mensagem">Mensagem de Fã</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Escreva aqui sua mensagem" required></textarea>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label>Gostaria de receber novidades?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="novidades" value="sim" required> Sim</label>
+                        <label><input type="radio" name="novidades" value="nao" required> Não</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </aside>            
     </main>
 
     <footer>
-        <img src="imagens/icon.jpg" alt="icon">
         <p>Rithiellen Kariny Máxima</p>
         <nav>
-            <a href="https://www.instagram.com/rithi_maxima/profilecard/?igsh=bzBudWVmejAwcDd1">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="https://github.com/Rithiellen">GitHub</a>
+            <a href="https://www.instagram.com/rithi_maxima/profilecard/?igsh=bzBudWVmejAwcDd1" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/rithiellen-m%C3%A1xima-324305306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Rithiellen" target="_blank">GitHub</a>
         </nav>
+        <p>Sarah J. Maas Fanpage. Este é um site feito por fã e não é afiliado oficialmente à autora.
+        </p>
     </footer>
 </body>
 </html>
