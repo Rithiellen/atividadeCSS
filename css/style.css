@@ -165,7 +165,39 @@ section .img-livros {
     margin: auto; 
 }
 
+#mulhergato{
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;    
+    display: flex;       
+    margin: auto; 
+    box-shadow: 2px 3px solid rgba(0, 0, 0, 0.452);
+}
+
+.fanarte{
+    position: relative; 
+    max-width: 300px;
+    width: 280px;
+    height: 290px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem; 
+    padding: 0px;
+    
+}
+
+.outrolivros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto; 
+    padding: 8px;
+}
+
 section .p-img{
+    text-align: center;
+}
+div .p-img{
     text-align: center;
 }
 
