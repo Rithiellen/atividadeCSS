@@ -3,7 +3,9 @@
 > Rithiellen Kariny Alves Máxima 🦋
 
 <h2>Descrição do site:</h2>
- 
+
+>Sarah J. Maas
+
 + O publico alvo é fãs da autora Sarah J. Maas;
 + O site foi desenvolvido somente em HTML e CSS para uma atividade da disciplina de WEBS-2024;
 + No site você encontra as obras de sucesso da autora;
